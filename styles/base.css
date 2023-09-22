@@ -39,14 +39,18 @@ nav{
 nav a{
     color: white;
     text-decoration: none;
-    margin: 10px;
+    padding: 10px;
+}
+
+nav a:hover{
+    border: 1px solid white;
 }
 
 main{
     margin: 20px auto;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr 1fr;
+    grid-template-rows: auto auto 1fr 1fr;
     
     justify-items: center;
     
@@ -56,11 +60,12 @@ main{
 
 .card {
     
-    padding: 10px;
+   
     margin-bottom: 20px;
     text-align: center;
     width: 100%;
-    
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
 }
 
 .card h3{
@@ -68,6 +73,7 @@ main{
     padding: 10px;
     border-radius: 5px;
     color: white;
+    margin-top: 0;
 }
 
 li{
@@ -88,4 +94,8 @@ footer img{
 
 #lastModified{
     color: yellow;
+}
+
+hr{
+    width: 100%;
 }
