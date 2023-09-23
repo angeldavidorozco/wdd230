@@ -1,0 +1,14 @@
+@media (max-width:1200px){
+
+    main{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .last{
+
+        grid-column: 1/3;
+
+    }
+
+}

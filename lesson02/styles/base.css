@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+
+body{
+    font-family: 'Work Sans', sans-serif;
+    
+}
+
+header{
+    background-color: #1d4d72;
+    display: block;
+    text-align: center;
+    padding: 2rem;
+}
+
+
+header h1, header h2{
+    
+    
+    
+    margin-left: 1rem;
+    color: white;
+}
+
+
+main{
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    
+    justify-items: center;
+    
+    justify-content: center;
+    width: 80%;
+
+    gap: 15px;
+    
+    
+}
+
+.card {
+    
+    background-color: rgb(209, 209, 209);
+    text-align: left;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    align-items: center;
+    
+}
+
+.card img{
+    max-width: 95%;
+    margin: 10px auto;
+    display: block;
+    height: 50%;
+    
+}
+
+.card a, .card p{
+
+    margin: 10px;
+
+}
+
+.card h3{
+    background-color: #1d4d72;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    margin-top: 0;
+    
+    
+    
+}
+
+footer{
+    text-align: center;
+    background-color: #1d4d72;
+    padding: 10px;
+    color: white;
+}
+
+footer img{
+    width: 3%;
+}
+
+#lastModified{
+    color: yellow;
+}
