@@ -23,5 +23,29 @@
         
     }
     
+    #menu {
+        display: none; /* hide hamburger button */
+    }
+
+    nav, nav.open{
+        background-color: black;
+        flex-direction: row;
+        height: auto;
+        display: flex;
+        align-items: center;
+	}
+
+    
+	nav a {
+		display: block;
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+	}
+
+    #map.open{
+        opacity: 1;
+    }
+
 
 }

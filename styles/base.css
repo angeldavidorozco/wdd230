@@ -29,14 +29,20 @@ header h1{
 }
 
 nav{
+    display: none;
+    
+}
+
+nav.open{
     background-color: black;
     flex-direction: column;
     
     display: flex;
     align-items: center;
+    
 }
 
-nav a{
+nav.open a{
     color: white;
     text-decoration: none;
     padding: 10px;
@@ -98,4 +104,34 @@ footer img{
 
 hr{
     width: 100%;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "❌";
+}
+
+#menu {
+	font-size: 1.5rem;
+	border: 1px solid rgba(0,0,0,.3);
+	padding: 3px 7px 6px;
+	background-color: #eee;
+	color: #000;
+ 	position: absolute;
+	right:5%;
+	top: 6%;
+}
+
+#map{
+    display: flex;
+    margin: 2% auto;
+    width: 100%;
+    max-width: 85%;
+}
+
+#map.open{
+    opacity: 0;
 }
