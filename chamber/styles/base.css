@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+
+body{
+    font-family: 'Work Sans', sans-serif;
+    background-color: var(--eggshell);
+}
+
+
+:root{
+    --rich-black: #0d1321ff;
+    --prussian-blue: #1d2d44ff;
+    --paynes-gray: #3e5c76ff;
+    --silver-lake-blue: #748cabff;
+    --eggshell: #f0ebd8ff;
+}
+
+.header{
+    width: 100%;
+    height: 100%;
+    background-color: var(--prussian-blue);
+    color: white;
+    align-items: center;
+    
+    display: flex;
+}
+
+.header h1{
+    display: inline-flex;
+    margin-left: 2%;
+    max-width: 70%;
+}
+
+.header img{
+    display: inline-flex;
+    margin-left: 2%;
+    width: 10%;
+    max-width: 100px;
+}
+
+.hero {
+    
+    position: relative;
+    text-align: center;
+    
+    
+}
+
+
+.hero img{
+    display: flex;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    
+}
+
+.call{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} 
+
+.card{
+    background-color: var(--silver-lake-blue);
+    width: 90%;
+    padding: 1rem;
+    margin: 10px auto;
+    text-align: left;
+    border-radius: 9px;
+    border: 1px solid var(--prussian-blue);
+}
+
+.card h2{
+    margin-bottom: 0;
+}
+
+.card hr{
+    border-color: var(--rich-black);
+}
+
+.card p{
+    text-align: justify;
+    margin: auto 20px;
+}
+
+.advertisements h2{
+    text-align: center;
+}
+
+.advertisements .card h2{
+    text-align: left;
+}
+
+.advertisements .card h3{
+    text-align: right;
+}
+
+footer{
+    background-color: var(--prussian-blue);
+    padding: 40px;
+    margin-top: 100px;
+}
+
+footer p{
+    margin:0;
+}
+
+footer img{
+    display: inline-flex;
+    width: 20%;
+    margin-bottom: 10px;
+}
+
+footer hr{
+    border-color: var(--rich-black);
+}
+
+.ftitle{
+    display: inline-block;
+    margin: 10px;
+    max-width: 70%;
+}
+
+.fbottom{
+    text-align: center;
+    color: yellow;
+}
+
+nav{
+    display: none;
+    
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "❌";
+}
+
+#menu {
+	font-size: 1.5rem;
+	border: 1px solid rgba(0,0,0,.3);
+	padding: 3px 7px 6px;
+	background-color: #eee;
+	color: #000;
+ 	position: absolute;
+	right:5%;
+	top: 3.5%;
+}
+
+nav.open{
+    background-color: var(--rich-black);
+    flex-direction: column;
+    
+    display: flex;
+    align-items: center;
+    
+}
+
+nav.open a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav a:hover{
+    border: 1px solid white;
+}
+
+.active {
+	border-top: 2px solid white;
+}

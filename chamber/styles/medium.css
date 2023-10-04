@@ -1,0 +1,33 @@
+@media (min-width: 1200px){
+    #menu {
+        display: none; /* hide hamburger button */
+    }
+
+    .nav-header, .nav-header.open{
+        
+        flex-direction: row;
+        height: auto;
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+    }
+
+
+    .nav-header a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        margin-right: 5px;
+    }
+
+    .nav-header{
+        
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .navigation, nav.open{
+        display: none;
+    }
+}
