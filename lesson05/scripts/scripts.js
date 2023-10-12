@@ -10,6 +10,8 @@ button.addEventListener('click', () => {
         const deleteButton = document.createElement('button');
         li.textContent = input.value;
         deleteButton.textContent = '❌';
+        deleteButton.ariaLabel = "Delete " + input.value;
+        deleteButton.title = "Delete " + input.value;
         li.append(deleteButton);
         list.append(li);
 
