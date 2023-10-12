@@ -47,5 +47,10 @@
         opacity: 1;
     }
 
+    .switch {
+        right: 2%;
+        top: 7%;
+      }
+
 
 }
