@@ -38,6 +38,7 @@ const titles = document.querySelectorAll(".card h3");
 const cards = document.querySelectorAll(".card");
 const foot = document.querySelector("footer");
 const nav = document.querySelector("nav");
+const a = document.querySelectorAll("li a");
 
 modeButton.addEventListener("click", () => {
 	if (modeButton.style.backgroundColor === "") {
@@ -49,10 +50,13 @@ modeButton.addEventListener("click", () => {
 			element.style.backgroundColor = '#0e273b';
 		});
 		cards.forEach(element => {
-			element.style.backgroundColor = '#7b7c7d';
+			element.style.backgroundColor = '#3f3f3f';
+		});
+		a.forEach(element => {
+			element.style.color = 'white';
 		});
 		foot.style.backgroundColor = "#0e273b";
-		nav.style.backgroundColor = "#7b7c7d";
+		nav.style.backgroundColor = "#3f3f3f";
 		
 	} else if (modeButton.style.backgroundColor != 'white'){
 		body.style.background = "#fff";
@@ -64,6 +68,9 @@ modeButton.addEventListener("click", () => {
 		});
 		cards.forEach(element => {
 			element.style.backgroundColor = 'white';
+		});
+		a.forEach(element => {
+			element.style.color = 'black';
 		});
 		foot.style.backgroundColor = "#1d4d72";
 		nav.style.backgroundColor = "black";

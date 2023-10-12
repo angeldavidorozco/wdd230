@@ -87,6 +87,15 @@ li{
     text-align: left;
 }
 
+li a {
+   
+   color: black;
+}
+
+li a:visited {
+  color: black; /* Change the color for visited links */
+}
+
 footer{
     text-align: center;
     background-color: #1d4d72;
