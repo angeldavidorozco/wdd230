@@ -1,4 +1,4 @@
-@media (min-width: 1200px){
+@media (min-width: 1280px){
     #menu {
         display: none; /* hide hamburger button */
     }
@@ -30,4 +30,9 @@
     .navigation, nav.open{
         display: none;
     }
+
+    .switch {
+        right: 25%;
+        top: 2.5%;
+      }
 }

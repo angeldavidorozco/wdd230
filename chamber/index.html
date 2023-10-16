@@ -7,7 +7,7 @@
     <meta
         name="description"
         content="WDD 230 - Web Frontend Development, chamber of commerce, course assignment, made by: Angel David Orozoco Narvaez" >
-    <meta property="og:url"                content="angeldavidorozco.github.io/wdd230/chamber/" >
+    <meta property="og:url"                content="https://angeldavidorozco.github.io/wdd230/chamber/" >
     <meta property="og:type"               content="website" >
     <meta property="og:title"              content="Cordoba's chamber of commerce" >
     <meta property="og:image"              content="https://estaticos-cdn.prensaiberica.es/clip/1670bbbb-9844-49a0-80ab-8cf70d1b4c2d_16-9-discover-aspect-ratio_default_0.jpg" >
@@ -33,6 +33,11 @@
             <h1>Cordoba's Chamber of Commerce</h1>
             
             <button id="menu"></button>
+
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
 
             <nav class="nav-header">
                 <a href="#" class="active">Home</a>
@@ -110,14 +115,16 @@
     </main>
 
     <footer>
-        <img src="styles/images/placeholder.png" alt="Logo">
-        <div class="ftitle">
-            <h3>Cordoba's Chamber of Commerce</h3>
-            <p>Gral. Paz 79</p>
+        <div class="footer-top">
+            <img src="styles/images/placeholder.png" alt="Logo">
+            <div class="ftitle">
+                <h3>Cordoba's Chamber of Commerce</h3>
+                <p>Gral. Paz 79</p>
+            </div>
         </div>
-
-        <hr>
+        
         <div class="fbottom">
+        <hr>
         <p id="copyright"></p>
         <p id="lastModified"></p>
         </div>
