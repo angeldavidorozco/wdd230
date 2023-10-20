@@ -29,7 +29,7 @@
     <header>
         <section class="header">
             
-            <img src="styles/images/placeholder.png" alt="Logo">
+            <img src="styles/images/logo.webp" alt="Logo" width="1" height="1">
             <h1>Cordoba's Chamber of Commerce</h1>
             
             <button id="menu"></button>
@@ -59,14 +59,20 @@
 
     <main>
 
+
         <div class="hero">
-            <div>
-                <img src="styles/images/placeholder.png" alt="hero">
+            <picture>
+                <source media="(max-width: 500px)" srcset="styles/images/image-small.webp">
+                <source media="(max-width: 1000px)" srcset="styles/images/image-medium.webp">
+                <img src="styles/images/image-large.webp" alt="Cordoba's temple" width="3" height="2">
+            </picture>
+            <div class="herolabel">
+                <p class="l" style="color: black;">Large Image</p>
+                <p class="m" style="color: black;">Medium Image</p>
+                <p class="s" style="color: black;">Small Image</p>
             </div>
             <button class="call">Click Me!</button>
         </div>
-
-        
 
         <section class="events">
             <div class="card">
@@ -80,8 +86,11 @@
             <div class="card">
                 <h2>Weather</h2>
                 <hr>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at rhoncus leo. Proin tincidunt dui turpis, lacinia tincidunt dui sagittis at. Sed porttitor a eros sed rutrum. In vel posuere metus. In hac habitasse platea dictumst. Nunc scelerisque augue nec orci consectetur rutrum. Etiam porttitor elementum nisl ac pellentesque. Sed eleifend facilisis auctor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed et velit tortor. Aenean in lorem ut tortor consequat accumsan.</p>
+                <div class="content">
+                    <p>Temperature: <input type="number" id="tData" value="0"></p>
+                    <p>Wind Speed: <input type="number" id="wsData" value="0"></p> 
+                    <p>Wind Chill: <span id="wcData">NaN</span></p> 
+                </div>
             </div>
         </section>
 
@@ -132,5 +141,6 @@
 
 
     <script src="scripts/getdates.js"></script>
+    <script src="scripts/windchill.js"></script>
 </body>
 </html>

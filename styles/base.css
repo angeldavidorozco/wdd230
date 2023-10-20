@@ -246,12 +246,13 @@ hr{
   .herolabel {
     position: absolute;
     top: 30px;
-    left: 9%;
+    left: 1%;
     background: radial-gradient(#fff, #4D5B97);
     border: 1px solid rgba(0,0,0,.75);
     padding: 1.5rem;
     box-shadow: 0 0 3rem #fff;
     opacity: 0.75;
+    
     
   }
   
@@ -262,3 +263,5 @@ hr{
     font-size: 2rem;
     font-family:"Great Vibes", serif;
   }
+
+  

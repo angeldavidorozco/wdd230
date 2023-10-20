@@ -36,3 +36,10 @@
         top: 2.5%;
       }
 }
+
+@media (min-width: 501px) and (max-width: 1000px)
+{
+  .s, .l{
+    display: none;
+  }
+}

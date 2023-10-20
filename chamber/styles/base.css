@@ -35,7 +35,8 @@ body{
     display: inline-flex;
     margin-left: 2%;
     width: 10%;
-    max-width: 100px;
+    height: auto;
+    max-width: 80px;
 }
 
 .hero {
@@ -50,6 +51,7 @@ body{
 .hero img{
     display: flex;
     width: 100%;
+    height: auto;
     max-width: 900px;
     margin: 0 auto;
     
@@ -84,6 +86,14 @@ body{
     text-align: justify;
     margin: auto 20px;
 }
+
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
 
 .advertisements h2{
     text-align: center;
@@ -266,3 +276,50 @@ nav a:hover{
 
     
   }
+
+  .hero{
+      
+    display: flex;
+    position: relative;
+  }
+
+.hero picture{
+  margin: 0 auto;
+  
+}
+
+.hero img{
+  width: 100%;
+  max-width: 1400px;
+  height: 100%;
+  object-fit: cover;
+  
+}
+
+.herolabel {
+  position: absolute;
+  top: 30px;
+  left: 9%;
+  background: radial-gradient(#fff, #000000);
+  border: 1px solid rgba(0,0,0,.75);
+  padding: 1.5rem;
+  box-shadow: 0 0 3rem #fff;
+  opacity: 0.75;
+  
+}
+
+.herolabel p {
+  margin: 0;
+  padding: .25rem;
+  font-weight: 700;
+  font-size: 2rem;
+  font-family:"Great Vibes", serif;
+}
+
+
+@media (max-width : 500px)
+{
+  .l, .m{
+    display: none;
+  }
+}
