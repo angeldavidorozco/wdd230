@@ -105,6 +105,7 @@ footer{
 
 footer img{
     width: 3%;
+    height: auto;
 }
 
 #lastModified{

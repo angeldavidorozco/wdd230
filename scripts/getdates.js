@@ -12,7 +12,7 @@ let footer = document.querySelector("footer");
 
 let firstP = footer.firstElementChild;
 
-firstP.innerHTML = `&copy; ${year}<br>Angel Orozco<br>Argentina <img src="styles/images/argentina-flag-icon.svg" alt="flag">`
+firstP.innerHTML = `&copy; ${year}<br>Angel Orozco<br>Argentina <img src="styles/images/argentina-flag-icon.svg" alt="flag" width="16" height="10">`
 
 
 //hamburguer button
@@ -77,3 +77,24 @@ modeButton.addEventListener("click", () => {
 		
 	}
 });
+
+
+const visitsDisplay = document.querySelector(".visits");
+
+
+let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
+
+
+if (numVisits !== 0) {
+	visitsDisplay.textContent = numVisits;
+} else {
+	visitsDisplay.textContent = `This is your first visit. 🥳 Welcome!`;
+}
+
+
+numVisits++;
+
+
+localStorage.setItem("numVisits-ls", numVisits);
+
+
