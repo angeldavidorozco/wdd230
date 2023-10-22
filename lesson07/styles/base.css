@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+h1{
+  text-align: center;
+}
+main {
+  margin: 0 auto;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+img{
+  width: 100%;
+  background: black;
+  animation: fade 10s;
+}
+
+@keyframes fade {
+
+  0%{
+    opacity: 0%;
+  }
+
+  100%{
+    opacity: 100%;
+  }
+  
+}
+
+footer{
+  text-align: center;
+  background-color: #1d4d72;
+  padding: 10px;
+  color: white;
+}
+
+footer img{
+  width: 3%;
+}
+
+#lastModified{
+  color: yellow;
+}
