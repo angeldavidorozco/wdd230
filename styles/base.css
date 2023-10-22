@@ -161,6 +161,10 @@ hr{
     height: 0;
   }
   
+  .hidden {
+    display: none;
+}
+  
   .slider {
     position: absolute;
     cursor: pointer;
