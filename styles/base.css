@@ -160,7 +160,7 @@ hr{
     width: 0;
     height: 0;
   }
-  
+
   .hidden {
     display: none;
 }
@@ -261,7 +261,7 @@ hr{
     
   }
   
-  .herolabel p {
+  .herolabel h2 {
     margin: 0;
     padding: .25rem;
     font-weight: 700;
