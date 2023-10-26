@@ -55,7 +55,7 @@ function setChapterList() {
 
 function getChapterList() {
     return JSON.parse(localStorage.getItem('myFavBOMList'));
-  }
+}
 
 function deleteChapter(chapter) {
     chapter = chapter.slice(0, chapter.length - 1);

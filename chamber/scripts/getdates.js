@@ -14,6 +14,7 @@ let firstP = document.getElementById("copyright");
 
 firstP.innerHTML = `&copy; ${year} Cordoba's Chamber<br><b>Angel Orozco</b><br>WDD 230 Project`
 
+document.querySelector(".month").innerHTML = `- ${currentDate.getMonth() + 1}/${year}`
 
 //hamburguer button
 
@@ -41,6 +42,7 @@ const foot = document.querySelector("footer");
 const nav = document.querySelector("nav");
 const a = document.querySelectorAll("li a");
 const hr = document.querySelectorAll("hr");
+const currency = document.querySelectorAll(".currency");
 
 modeButton.addEventListener("click", () => {
 	if (modeButton.style.backgroundColor === "") {
@@ -59,6 +61,9 @@ modeButton.addEventListener("click", () => {
 		});
 		hr.forEach(element => {
 			element.style.borderColor = 'white';
+		});
+		currency.forEach(element => {
+			element.style.backgroundColor = '#0d1321ff';
 		});
 		foot.style.backgroundColor = "#0e273b";
 		nav.style.backgroundColor = "#1d2d44";
@@ -81,8 +86,36 @@ modeButton.addEventListener("click", () => {
 		hr.forEach(element => {
 			element.style.borderColor = '#0d1321';
 		});
+		currency.forEach(element => {
+			element.style.backgroundColor = '#ccc';
+		});
 		foot.style.backgroundColor = "#1d2d44";
 		nav.style.backgroundColor = "#1d2d44";
 		
 	}
+});
+
+//Api request
+
+let oficial = document.querySelector(".oficial");
+let blue = document.querySelector(".blue");
+let oficiale = document.querySelector(".oficiale");
+let bluee = document.querySelector(".bluee");
+
+fetch('https://api.bluelytics.com.ar/v2/latest', {
+  method: 'GET' // or 'POST'
+})
+
+.then(response => response.json())
+.then(data => {
+	oficiale.innerHTML = data.oficial_euro.value_avg;
+	bluee.innerHTML =  data.blue_euro.value_avg;
+	oficial.innerHTML = data.oficial.value_avg;
+	blue.innerHTML =  data.blue.value_avg;
+	})
+
+.catch((error) => {
+
+  console.error('Error:', error);
+
 });
