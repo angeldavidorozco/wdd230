@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- This start file was build by Paul Cheney  -->
+    <title>HTML5 Forms example</title>
+    <meta name="author" content="Angel Orozco">
+    <meta name="description" content="Forms example">
+
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/larger.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Course Proposal</h1>
+        <h2>Designing Web Forms</h2>
+    </header>
+
+    <nav class="clearfix">
+        <ul>
+            <li><a href="#">About</a></li>
+            <li class="active"><a href="#">Propose</a></li>
+            <li><a href="#">Winners</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Course Proposal Application</h1>
+        <form method="get" action="thanks.html">
+            <fieldset>
+                <legend>Applicant Information</legend>
+                <label class="top">First Name* <input type="text" name="fname" required></label>
+                <label class="top">Last Name* <input type="text" name="lname" required></label>
+                <label class="top">Phone <input type="tel" name="phone" placeholder="1234566789"></label>
+                <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+            </fieldset>
+
+
+            <fieldset>
+                <legend>Course Information</legend>
+                <div>Audience</div>
+                <label class = "sbs"><input type="radio" name="audience" value="begginer"> Begginer</label>
+                <label class = "sbs"><input type="radio" name="audience" value="intermediate"> intermediate</label>
+                <label class = "sbs"><input type="radio" name="audience" value="advanced"> Advanced</label>
+
+                <div>Software Needed</div>
+                <label class = "sbs"><input type="checkbox" name="editing" value="yes"> Photo Editing</label>
+                <label class = "sbs"><input type="checkbox" name="code" value="yes"> Coding</label>
+                <label class = "sbs"><input type="checkbox" name="process" value="yes"> Preprocessor</label>
+                <label class = "sbs"><input type="checkbox" name="client" value="yes"> FTP Client</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Funding</legend>
+                <label class="top">Anticipated Completion Date <input type="date" name="completeDate"></label>
+
+                <label class="top">Course Subject
+                    <select name="subject">
+                        <option value="Choice 1">Choice 1</option>
+                        <option value="Choice 2">Choice 2</option>
+                        <option value="Choice 3">Choice 3</option>
+                        <option value="Choice 4">Choice 4</option>
+                        <option value="Choice 5">Choice 5</option>
+                        <option value="Choice 6">Choice 6</option>
+                        <option value="Choice 7">Choice 7</option>
+                    </select>
+                </label> 
+                
+                <label class="top">How many authors <input type="number" name="authors"></label>
+            </fieldset>
+
+            <input class="submitBtn" type="submit" value="Propose my course">
+
+        </form>
+
+    </main>
+
+
+    <footer>
+        &copy; &bull; Angel Orozco &bull; 123-555-6789
+    </footer>
+    
+</body>
+
+</html>
