@@ -130,3 +130,8 @@ modeButton.addEventListener("click", () => {
 	}
 });
 
+
+//timestamp
+
+const timestamp = new Date();
+document.getElementById('timestamp').value = timestamp;

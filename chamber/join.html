@@ -67,9 +67,9 @@
                 <label class="top">Email* <input type="email" id="email" name="email" placeholder="someone@byui.edu" pattern="[^\s@]+@[^\s@]+\.[^\s@]+" required></label>
                 <label class="top">Phone number* <input type="number" id="pnumber" name="pnumber" placeholder="##########" required></label>
 
-                <label class="top">Title or position <input type="text" id="title" name="title"></label>
+                <label class="top">Title or position* <input type="text" id="title" name="title" pattern="^[a-zA-Z -]{7,}$" required></label>
                 
-               
+                <label><input type="hidden" name="timestamp" id="timestamp"></label>
                 
             </fieldset>
 
@@ -77,7 +77,7 @@
                 <legend>Business Information</legend>
                 <label class="top">Your business's name* <input type="text" id="bname" name="bname" required></label>
                 <label class="textbox">Enter your business's description:</label>
-                <textarea name="textbox" rows="4" cols="50"></textarea>
+                <textarea name="textbox" id="descrip" rows="4" cols="35"></textarea>
             </fieldset>
     
             <fieldset>
@@ -89,7 +89,7 @@
                     <tbody>
                         <tr>
                             <td>
-                                <label class = "sbs"><input type="radio" name="membership" value="NP" required> NP Membership</label>
+                                <label class = "sbs"><input type="radio" id="NP" name="membership" value="NP" required> NP Membership</label>
                             </td>
                             <td>
                                 <ul>
@@ -102,7 +102,7 @@
                         </tr>
                         <tr>
                             <td>
-                                <label class = "sbs"><input type="radio" name="membership" value="Bronze"> Bronze Membership</label>
+                                <label class = "sbs"><input type="radio" id="Bronze" name="membership" value="Bronze"> Bronze Membership</label>
                             </td>
                             <td>
                                 <ul>
@@ -116,7 +116,7 @@
                         </tr>
                         <tr>
                             <td>
-                                <label class = "sbs"><input type="radio" name="membership" value="Silver"> Silver Membership</label>
+                                <label class = "sbs"><input type="radio" id="Silver" name="membership" value="Silver"> Silver Membership</label>
                             </td>
                             <td>
                                 <ul>
@@ -132,7 +132,7 @@
                         </tr>
                         <tr>
                             <td>
-                                <label class = "sbs"><input type="radio" name="membership" value="Gold"> Gold Membership</label>
+                                <label class = "sbs"><input type="radio" id="Gold" name="membership" value="Gold"> Gold Membership</label>
                             </td>
                             <td>
                                 <ul>
