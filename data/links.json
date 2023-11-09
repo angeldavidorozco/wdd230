@@ -1,0 +1,87 @@
+{
+    "lessons":[
+        {
+    "lesson": "02" ,
+    "links": [
+            {
+            "url":"lesson02/design.html",
+            "title":"Design Activity"
+            },
+            {
+            "url":"lesson02/design-principles.html",
+            "title":"Design Principles"
+            }
+        ]
+    },
+    {
+    "lesson": "03" ,
+    "links": [
+            {
+            "url":"https://codepen.io/Angel-Orozco/pen/dywmoeN",
+            "title":" Pseudo Elements Codepen"
+            },
+            {
+            "url":"https://codepen.io/Angel-Orozco/pen/MWZVBqe",
+            "title":"Hamburguer Menu Codepen"
+            }
+        ]
+    },
+    {
+    "lesson": "04" ,
+    "links": [
+            {
+            "url":"https://codepen.io/Angel-Orozco/pen/QWzBzob",
+            "title":"Pseudo-class Fun Codepen"
+            }
+        ]
+    },
+    {
+    "lesson": "05" ,
+    "links": [
+            {
+            "url":"lesson05/bom.html",
+            "title":"Book of Mormon Favorite Chapters Application"
+            }
+        ]
+    },
+    {
+    "lesson": "07" ,
+    "links": [
+            {
+            "url":"lesson07/lazyload.html",
+            "title":"Lazy Loading Example"
+            },
+            {
+            "url":"lesson07/bom.html",
+            "title":"Localstorage Example"
+            }
+        ]
+    },
+    {
+    "lesson": "08" ,
+    "links": [
+            {
+            "url":"lesson08/tablebuild.html",
+            "title":"Table Examples"
+            },
+            {
+            "url":"forms/form-start/index.html",
+            "title":"Forms Examples"
+            }
+        ]
+    },
+    {
+    "lesson": "09" ,
+    "links": [
+            {
+            "url":"lesson09/new-ward-members.json",
+            "title":"JSON Example"
+            },
+            {
+                "url": "lesson09/prophets.html",
+                "title":"JSON Prophets Example"
+            }
+        ]
+    }
+]
+}

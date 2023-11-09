@@ -1,0 +1,28 @@
+{
+    "familyName": "Orozco Narvaez",
+    "dateMovingIn": "October 2022",
+    "familyNumber": 4,
+    "visited": true,
+    "indMembers": [
+        {
+            "name": "Angel Orozco",
+            "Gender": "Male",
+            "Birthdate": "22/08/2000"
+        },
+        {
+            "name": "Carlos Orozco",
+            "Gender": "Male",
+            "Birthdate": "01/07/1997"
+        },
+        {
+            "name": "Carlos Orozco",
+            "Gender": "Male",
+            "Birthdate": "10/06/1974"
+        },
+        {
+            "name": "Roxy Narvaez",
+            "Gender": "Female",
+            "Birthdate": "28/07/1971"
+        }
+    ]
+}
