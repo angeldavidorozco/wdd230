@@ -1,0 +1,67 @@
+{
+    "companies": [
+        {
+            "name": "Tech Titans",
+            "address": "123 Calle de los Sueños, Córdoba, Argentina",
+            "phone": "+1 123 456 7890",
+            "website": "www.techtitans.com",
+            "icon": "techtitans_icon.png",
+            "membership_level": "Gold",
+            "CEO": "John Doe"
+        },
+        {
+            "name": "Green Energy Corp",
+            "address": "456 Avenida de la Energía, Córdoba, Argentina",
+            "phone": "+44 1234 567890",
+            "website": "www.greenenergycorp.co.uk",
+            "icon": "greenenergy_icon.png",
+            "membership_level": "Silver",
+            "CEO": "Jane Smith"
+        },
+        {
+            "name": "Auto Innovators",
+            "address": "789 Camino de la Innovación, Córdoba, Argentina",
+            "phone": "+49 123 456 7890",
+            "website": "www.autoinnovators.de",
+            "icon": "autoinnovators_icon.png",
+            "membership_level": "Bronze",
+            "CEO": "Max Mustermann"
+        },
+        {
+            "name": "AI Advancements",
+            "address": "321 Paseo de la Inteligencia, Córdoba, Argentina",
+            "phone": "+81 123 456 7890",
+            "website": "www.aiadvancements.jp",
+            "icon": "aiadvancements_icon.png",
+            "membership_level": "Gold",
+            "CEO": "Taro Yamada"
+        },
+        {
+            "name": "Space Explorers",
+            "address": "654 Bulevar del Cosmos, Córdoba, Argentina",
+            "phone": "+7 123 456 7890",
+            "website": "www.spaceexplorers.ru",
+            "icon": "spaceexplorers_icons.png",
+            "membership_level": "Bronze",
+            "CEO": "Ivan Ivanovich"
+        },
+        {
+            "name": "Oceanic Preservation",
+            "address": "987 Calle del Mar, Córdoba, Argentina",
+            "phone": "+61 123 456 789",
+            "website": "www.oceanicpreservation.au",
+            "icon": "oceanicpreservation_icon.png",
+            "membership_level": "Silver",
+            "CEO": "Bruce Walker"
+        },
+        {
+            "name": "Quantum Leap Labs",
+            "address": "147 Calle del Cuántico, Córdoba, Argentina",
+            "phone": "+41 123 456 789",
+            "website": "www.quantumleaplabs.ch",
+            "icon": "quantumleaplabs_icon.png",
+            "membership_level": "Gold",
+            "CEO": "Erika Musterfrau"
+        }
+    ]
+}
