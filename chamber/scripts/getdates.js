@@ -14,7 +14,7 @@ let firstP = document.getElementById("copyright");
 
 firstP.innerHTML = `&copy; ${year} Cordoba's Chamber<br><b>Angel Orozco</b><br>WDD 230 Project`
 
-document.querySelector(".month").innerHTML = `- ${currentDate.getMonth() + 1}/${year}`
+
 
 //hamburguer button
 

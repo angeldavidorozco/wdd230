@@ -52,3 +52,5 @@ localStorage.setItem("lastVisit" , newVisit);
 localStorage.setItem("numVisits-ls", numVisits);
 
 
+document.querySelector(".month").innerHTML = `- ${currentDate.getMonth() + 1}/${year}`
+
