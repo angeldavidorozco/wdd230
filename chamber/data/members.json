@@ -13,14 +13,14 @@
             "name": "Green Energy Corp",
             "address": "456 Avenida de la Energía, Córdoba, Argentina",
             "phone": "+44 1234 567890",
-            "website": "www.greenenergycorp.co.uk",
+            "website": "www.greenenergy.co.uk",
             "icon": "greenenergy_icon.png",
             "membership_level": "Silver",
             "CEO": "Jane Smith"
         },
         {
             "name": "Auto Innovators",
-            "address": "789 Camino de la Innovación, Córdoba, Argentina",
+            "address": "789 Camino Innovación, Córdoba, Argentina",
             "phone": "+49 123 456 7890",
             "website": "www.autoinnovators.de",
             "icon": "autoinnovators_icon.png",
