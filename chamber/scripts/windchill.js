@@ -64,7 +64,6 @@ function displayResultsH(data){
 
         let day = convertMsToDate(data.list[j].dt_txt);
 
-        console.log(day);
         
         infoWeather.innerHTML = `
         

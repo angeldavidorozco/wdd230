@@ -129,10 +129,12 @@ footer p{
 }
 
 footer img{
-    display: inline-flex;
+    display: block;
     width: 13%;
-    height: auto;
+    height: 13%;
     margin-bottom: 10px;
+    
+    
 }
 
 footer hr{
@@ -149,6 +151,7 @@ footer hr{
 
 .footer-top{
     display: flex;
+    align-items: center;
 }
 
 .fbottom{
