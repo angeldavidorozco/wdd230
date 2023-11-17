@@ -276,3 +276,9 @@ hr{
   .weather{
     margin: auto
   }
+
+  .apiWeather{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

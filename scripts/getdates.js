@@ -98,3 +98,44 @@ numVisits++;
 localStorage.setItem("numVisits-ls", numVisits);
 
 
+
+////////////////////////////////////////////
+//
+//API FETCH
+//
+////////////////////////////////////////////
+
+const currentTemp = document.querySelector('#current-temp');
+const weatherIcon = document.querySelector('#weather-icon');
+const captionDesc = document.querySelector('figcaption');
+
+const url = "https://api.openweathermap.org/data/2.5/weather?lat=-31.42&lon=-64.19&appid=796bb46e588464da545cdd3267149339&units=imperial"
+
+
+async function apiFetch() {
+    try{
+        const response = await fetch(url);
+        if (response.ok){
+
+        const data = await response.json();
+       
+        displayResults(data)
+    }
+    } catch(error){
+        console.log(error);
+    }
+}
+
+apiFetch();
+
+
+function displayResults(data){
+    
+    const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`
+    let desc = data.weather[0].description;
+	currentTemp.innerHTML = `${Math.round(data.main.temp)}&deg;F - ${desc}`;
+    weatherIcon.setAttribute('alt', desc );
+    weatherIcon.setAttribute('src', iconsrc );
+	
+}
+

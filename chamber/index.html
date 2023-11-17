@@ -26,6 +26,11 @@
 
 <body>
 
+    <div id="banner" class="card">
+        <span id="close">❌</span>
+        <p>Join us for the Chamber of Commerce meet and greet on Wednesday at 7:00 p.m.</p>
+    </div>
+
     <header>
         <section class="header">
             
@@ -86,10 +91,31 @@
             <div class="card">
                 <h2>Weather</h2>
                 <hr>
+                
                 <div class="content">
-                    <p>Temperature: <input type="number" id="tData" value="0"></p>
-                    <p>Wind Speed: <input type="number" id="wsData" value="0"></p> 
+                <h4>Current Weather</h4>
+                    <p class="apiWeather">
+                
+                        <img id="weather-icon" src="" alt="">
+        
+                        <span id="current-temp"></span>
+                        <figcaption></figcaption>
+                        
+                    </p>
+
+                    <p>Temperature: <span id="tData"></span></p>
+                    <p>Wind Speed: <span id="wsData"></span></p> 
                     <p>Wind Chill: <span id="wcData">NaN</span></p> 
+
+                <h4>Forecast</h4>
+                <div id="forecast" class="card">
+
+                <br>
+
+                </div>
+                <br>
+                    
+                    
                 </div>
             </div>
         </section>

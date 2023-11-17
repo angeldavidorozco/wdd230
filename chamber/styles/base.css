@@ -5,6 +5,7 @@ body{
     font-family: 'Work Sans', sans-serif;
     background-color: var(--eggshell);
     overflow-x: hidden;
+    margin: 0;
 }
 
 
@@ -44,6 +45,8 @@ body{
     
     position: relative;
     text-align: center;
+    display: flex;
+
     
     
 }
@@ -51,11 +54,18 @@ body{
 
 .hero img{
     display: flex;
-    width: 100%;
-    height: auto;
-    max-width: 900px;
-    margin: 0 auto;
     
+    height: auto;
+    
+    margin: 0 auto;
+
+    
+
+  width: 100%;
+  max-width: 1400px;
+  height: 100%;
+  object-fit: cover;
+  
 }
 
 .call{
@@ -279,24 +289,13 @@ nav a:hover{
     
   }
 
-  .hero{
-      
-    display: flex;
-    position: relative;
-  }
+  
 
 .hero picture{
   margin: 0 auto;
   
 }
 
-.hero img{
-  width: 100%;
-  max-width: 1400px;
-  height: 100%;
-  object-fit: cover;
-  
-}
 
 .herolabel {
   position: absolute;
@@ -438,6 +437,8 @@ article section {
 
 .grid section {
 	text-align: center;
+  
+
 }
 
 .grid img {
@@ -494,6 +495,7 @@ section a {
 	font-size: 0.85rem;
 	color: navy;
 	letter-spacing: 1.1pt;
+  
 }
 
 #directory img {
@@ -511,4 +513,36 @@ section a {
 
 .Gold{
   background-color: gold;
+}
+
+
+.apiWeather, #forecast{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#banner {
+  display: none;
+  background-color: var(--rich-black);
+  color: white;
+  position: fixed;
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  padding: 20px;
+  text-align: center;
+  border-color: white;
+}
+#close {
+  float: right;
+  cursor: pointer;
+}
+
+#forecast{
+  background-color: whitesmoke;
+  padding: 20px;
 }
