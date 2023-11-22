@@ -7,7 +7,8 @@
             "website": "www.techtitans.com",
             "icon": "techtitans_icon.png",
             "membership_level": "Gold",
-            "CEO": "John Doe"
+            "CEO": "John Doe",
+            "add":"Dive into the future with Tech Titans! Our cutting-edge technology products are designed to push the boundaries of innovation. From smart devices to AI solutions, we’re shaping tomorrow, today."
         },
         {
             "name": "Green Energy Corp",
@@ -16,7 +17,8 @@
             "website": "www.greenenergy.co.uk",
             "icon": "greenenergy_icon.png",
             "membership_level": "Silver",
-            "CEO": "Jane Smith"
+            "CEO": "Jane Smith",
+            "add":"Join the green revolution with Green Energy Corp! Our renewable energy solutions not only power your home and business, but also contribute to a sustainable and eco-friendly world. Go green, go with Green Energy Corp!"
         },
         {
             "name": "Auto Innovators",
@@ -25,7 +27,8 @@
             "website": "www.autoinnovators.de",
             "icon": "autoinnovators_icon.png",
             "membership_level": "Bronze",
-            "CEO": "Max Mustermann"
+            "CEO": "Max Mustermann",
+            "add":"Experience the future of transportation with Auto Innovators! Our advanced vehicles combine high performance with eco-friendly technology. Step into the future, ride with Auto Innovators!"
         },
         {
             "name": "AI Advancements",
@@ -34,7 +37,8 @@
             "website": "www.aiadvancements.jp",
             "icon": "aiadvancements_icon.png",
             "membership_level": "Gold",
-            "CEO": "Taro Yamada"
+            "CEO": "Taro Yamada",
+            "add": "Unleash the power of artificial intelligence with AI Advancements! Our AI-driven solutions are transforming businesses, empowering them to make smarter decisions and automate processes. Discover the future, with AI Advancements."
         },
         {
             "name": "Space Explorers",
@@ -43,7 +47,8 @@
             "website": "www.spaceexplorers.ru",
             "icon": "spaceexplorers_icons.png",
             "membership_level": "Bronze",
-            "CEO": "Ivan Ivanovich"
+            "CEO": "Ivan Ivanovich",
+            "add": " Embark on a cosmic journey with Space Explorers! Our space exploration technologies are pushing the boundaries of what’s possible, bringing the cosmos closer than ever. Reach for the stars, with Space Explorers!"
         },
         {
             "name": "Oceanic Preservation",
@@ -52,7 +57,8 @@
             "website": "www.oceanicpreservation.au",
             "icon": "oceanicpreservation_icon.png",
             "membership_level": "Silver",
-            "CEO": "Bruce Walker"
+            "CEO": "Bruce Walker",
+            "add": "Dive into a world of conservation with Oceanic Preservation! Our initiatives are dedicated to preserving our oceans and marine life. Make a splash, join Oceanic Preservation!"
         },
         {
             "name": "Quantum Leap Labs",
@@ -61,7 +67,8 @@
             "website": "www.quantumleaplabs.ch",
             "icon": "quantumleaplabs_icon.png",
             "membership_level": "Gold",
-            "CEO": "Erika Musterfrau"
+            "CEO": "Erika Musterfrau",
+            "add": "Take a leap into the future with Quantum Leap Labs! Our quantum computing solutions are revolutionizing the tech industry, offering unprecedented computational power. Leap into the future, with Quantum Leap Labs!"
         }
     ]
 }
