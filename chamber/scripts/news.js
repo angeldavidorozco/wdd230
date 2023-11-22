@@ -1,4 +1,4 @@
-const urlN = 'https://newsapi.org/v2/top-headlines?sources=google-news-ar&apiKey=fb73926091db47b697357036289d59a2'
+const urlN = 'http://api.mediastack.com/v1/news?access_key=d14931e3f0d1620ebabc6b9132bbf0e9&keywords=Argentina&countries=us'
 
 async function apiFetchNews() {
     try{
@@ -25,8 +25,8 @@ function displayNews(data) {
     for(let i = 0; i<2; i++)
     {
         let pArt = document.createElement("div");
-        const title = data.articles[i].title;
-        const link = data.articles[i].url;
+        const title = data.data[i].title;
+        const link = data.data[i].url;
 
         pArt.innerHTML = `<h3>${title}</h3><a href="${link}" target="_blank">Link to article</a> <br>`
 
