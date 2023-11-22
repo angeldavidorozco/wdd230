@@ -13,28 +13,28 @@ async function getLinks() {
   getLinks();
 
 
-  const displayLinks = (link) => {
-    link.forEach((link) => {
+const displayLinks = (link) => {
+  link.forEach((link) => {
 
-        link.links.forEach((act) =>{
+      link.links.forEach((act) =>{
 
-        // Create elements to add to the div.cards element
-        let li = document.createElement('li');
-        let a = document.createElement('a'); // fill in the blank
-        
-        let actNumber = document.createElement('p');
+      // Create elements to add to the div.cards element
+      let li = document.createElement('li');
+      let a = document.createElement('a'); // fill in the blank
+      
+      let actNumber = document.createElement('p');
 
-        actNumber.textContent = `Week ${link.lesson}: ${act.title}`;
+      actNumber.textContent = `Week ${link.lesson}: ${act.title}`;
 
-        a.setAttribute('href', act.url);
-        a.appendChild(actNumber)
-        li.appendChild(a);
-        list.appendChild(li);
+      a.setAttribute('href', act.url);
+      a.appendChild(actNumber)
+      li.appendChild(a);
+      list.appendChild(li);
 
-        });
+      });
 
-        
-        
-  
-    });
-  }
+      
+      
+
+  });
+}

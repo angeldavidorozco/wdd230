@@ -135,3 +135,17 @@ modeButton.addEventListener("click", () => {
 
 const timestamp = new Date();
 document.getElementById('timestamp').value = timestamp;
+
+function validateForm() {
+	var titleInput = document.getElementById('ptitle');
+	var titleValue = titleInput.value;
+
+	// Client-side validation
+	var pattern = /^[a-zA-Z-]{7,}$/;
+	if (!pattern.test(titleValue)) {
+		
+		return false; // Prevent form submission
+	}
+
+	return true; // Allow form submission
+}

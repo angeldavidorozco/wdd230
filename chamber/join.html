@@ -40,26 +40,26 @@
             </label>
 
             <nav class="nav-header">
-                <a href="index.html" class="active">Home</a>
+                <a href="index.html">Home</a>
                 <a href="discover.html">Discover</a>
                 <a href="directory.html">Directory</a>
-                <a href="join.html" target="_blank">Join</a>
+                <a href="join.html" target="_blank" class="active">Join</a>
                 
             </nav>
 
         </section>
 
         <nav class="navigation">
-            <a href="index.html" class="active">Home</a>
+            <a href="index.html">Home</a>
             <a href="discover.html">Discover</a>
             <a href="directory.html">Directory</a>
-            <a href="join.html" target="_blank">Join</a>
+            <a href="join.html" target="_blank" class="active">Join</a>
         </nav>
     </header>
 
     <main id="join">
 
-        <form method="get" action="thankyou.html">
+        <form method="get" action="thankyou.html" onsubmit="return validateForm()">
             <fieldset>
                 <legend>User Information</legend>
                 <label class="top">First name* <input type="text" id="fname" name="fname" required></label>
@@ -67,7 +67,7 @@
                 <label class="top">Email* <input type="email" id="email" name="email" placeholder="someone@byui.edu" pattern="[^\s@]+@[^\s@]+\.[^\s@]+" required></label>
                 <label class="top">Phone number* <input type="tel" id="pnumber" name="pnumber" placeholder="##########" required></label>
 
-                <label class="top">Title or position* <input type="text" id="ptitle" name="ptitle" pattern="^[a-zA-Z -]{7,}$"></label>
+                <label class="top">Title or position* <input type="text" id="ptitle" name="ptitle" pattern="^[a-zA-Z\-]{7,}$" title="Enter title" required></label>
                 
                 <label><input type="hidden" name="timestamp" id="timestamp"></label>
                 

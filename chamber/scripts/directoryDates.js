@@ -44,16 +44,10 @@ const a = document.querySelectorAll("li a");
 const hr = document.querySelectorAll("hr");
 const currency = document.querySelectorAll(".currency");
 
-
 modeButton.addEventListener("click", () => {
-
-	const news = document.querySelectorAll(".news");
-	const newsa = document.querySelectorAll(".news a");
-
-
 	if (modeButton.style.backgroundColor === "") {
 		body.style.background = "#000";
-		body.style.color = "#fff";
+		
 		modeButton.style.backgroundColor = "#2196F3";
 		header.style.backgroundColor = "#1d2d44";
 		titles.forEach(element => {
@@ -71,13 +65,6 @@ modeButton.addEventListener("click", () => {
 		});
 		currency.forEach(element => {
 			element.style.backgroundColor = '#0d1321ff';
-		});
-		news.forEach(element => {
-			element.style.backgroundColor = '#1d2d44';
-			element.style.borderColor = "white";
-		});
-		newsa.forEach(element => {
-			element.style.color = "white";
 		});
 		foot.style.backgroundColor = "#0e273b";
 		nav.style.backgroundColor = "#1d2d44";
@@ -104,13 +91,6 @@ modeButton.addEventListener("click", () => {
 		});
 		currency.forEach(element => {
 			element.style.backgroundColor = '';
-		});
-		news.forEach(element => {
-			element.style.backgroundColor = '';
-			element.style.borderColor = "";
-		});
-		newsa.forEach(element => {
-			element.style.color = "";
 		});
 		foot.style.backgroundColor = "";
 		nav.style.backgroundColor = "";

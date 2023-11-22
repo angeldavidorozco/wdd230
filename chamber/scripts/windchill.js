@@ -45,7 +45,7 @@ async function apiFetchHourly() {
     }
 }
 
-apiFetchHourly()
+apiFetchHourly();
 
 apiFetch();
 

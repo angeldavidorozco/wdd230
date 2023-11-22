@@ -67,83 +67,83 @@
 
         <div class="hero">
             <picture>
-                <source media="(max-width: 500px)" srcset="styles/images/image-small.webp">
-                <source media="(max-width: 1000px)" srcset="styles/images/image-medium.webp">
-                <img src="styles/images/image-large.webp" alt="Cordoba's temple" width="3" height="2">
+                <source media="(max-width: 500px)" srcset="styles/images/cordoba-small.webp">
+                <source media="(max-width: 1000px)" srcset="styles/images/cordoba-medium.webp">
+                <img src="styles/images/cordoba-large.webp" alt="Cordoba city" width="3" height="2">
             </picture>
-            <div class="herolabel">
-                <p class="l" style="color: black;">Large Image</p>
-                <p class="m" style="color: black;">Medium Image</p>
-                <p class="s" style="color: black;">Small Image</p>
-            </div>
-            <button class="call">Click Me!</button>
+            <a href="join.html" target="_blank">
+                <button class="call">Join!</button>
+            </a>
         </div>
 
         <section class="events">
-            <div class="card">
+            <div id="dnews" class="card">
                 <h2>Current events</h2>
                 <hr>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at rhoncus leo. Proin tincidunt dui turpis, lacinia tincidunt dui sagittis at. Sed porttitor a eros sed rutrum. In vel posuere metus. In hac habitasse platea dictumst. Nunc scelerisque augue nec orci consectetur rutrum. Etiam porttitor elementum nisl ac pellentesque. Sed eleifend facilisis auctor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed et velit tortor. Aenean in lorem ut tortor consequat accumsan.</p>
+                
             </div>
         </section>
 
-        <section class="weather">
-            <div class="card">
-                <h2>Weather</h2>
-                <hr>
-                
-                <div class="content">
-                    <h4>Current Weather</h4>
-                        <p class="apiWeather"></p>
+        <section class="main-grid">
+            <section class="weather">
+                <div class="card">
+                    <h2>Weather</h2>
+                    <hr>
                     
-                        <img id="weather-icon" src="-" alt="-">
-        
-                        <p><span id="current-temp"></span></p>
-                           
+                    <div class="content">
+                        <h4>Current Weather</h4>
+                        <div class="card current">
+                            <p class="apiWeather"></p>
+                        
+                            <img id="weather-icon" src="-" alt="-">
+            
+                            <p><span id="current-temp"></span></p>
+                            
+                            <br>
+
+                            <p>Temperature: <span id="tData"></span></p>
+                            <p>Wind Speed: <span id="wsData"></span></p> 
+                            <p>Wind Chill: <span id="wcData">NaN</span></p> 
+                        </div>
+                        <h4>Forecast</h4>
+                        <div id="forecast" class="card">
+
                         <br>
 
-                        <p>Temperature: <span id="tData"></span></p>
-                        <p>Wind Speed: <span id="wsData"></span></p> 
-                        <p>Wind Chill: <span id="wcData">NaN</span></p> 
-
-                    <h4>Forecast</h4>
-                    <div id="forecast" class="card">
-
-                    <br>
-
+                        </div>
+                        <br>
+                        
+                        
                     </div>
-                    <br>
+                </div>
+            </section>
+
+            <section class="advertisements">
+                <div class="card">
+                <h2>Member Spotlights</h2>
+
+                <div class="card Gold">
                     
+                    <h2>Tech Titans</h2>
+                    <h3>"Innovating the Future"</h3>           
+                    <p>Dive into the future with Tech Titans! Our cutting-edge technology products are designed to push the boundaries of innovation. From smart devices to AI solutions, we’re shaping tomorrow, today.</p>
+                </div>
+
+                <div class="card Silver">
                     
+                    <h2>Green Energy Corp</h2>
+                    <h3>"Powering a Sustainable World"</h3>            
+                    <p>Join the green revolution with Green Energy Corp! Our renewable energy solutions not only power your home and business, but also contribute to a sustainable and eco-friendly world. Go green, go with Green Energy Corp!</p>
+                </div>
+
+                <div class="card Bronze">
+                    
+                    <h2>Auto Innovators</h2>
+                    <h3>"Driving the Future"</h3>
+                    <p>Experience the future of transportation with Auto Innovators! Our advanced vehicles combine high performance with eco-friendly technology. Step into the future, ride with Auto Innovators!</p>
                 </div>
             </div>
-        </section>
-
-        <section class="advertisements">
-
-            <h2>Member Spotlights</h2>
-
-            <div class="card">
-                
-                <h2>Company's name</h2>
-                <h3>"Company's motto"</h3>           
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at rhoncus leo. Proin tincidunt dui turpis, lacinia tincidunt dui sagittis at. Sed porttitor a eros sed rutrum. In vel posuere metus. In hac habitasse platea dictumst. Nunc scelerisque augue nec orci consectetur rutrum. Etiam porttitor elementum nisl ac pellentesque. Sed eleifend facilisis auctor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed et velit tortor. Aenean in lorem ut tortor consequat accumsan.</p>
-            </div>
-
-            <div class="card">
-                
-                <h2>Company's name</h2>
-                <h3>"Company's motto"</h3>            
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at rhoncus leo. Proin tincidunt dui turpis, lacinia tincidunt dui sagittis at. Sed porttitor a eros sed rutrum. In vel posuere metus. In hac habitasse platea dictumst. Nunc scelerisque augue nec orci consectetur rutrum. Etiam porttitor elementum nisl ac pellentesque. Sed eleifend facilisis auctor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed et velit tortor. Aenean in lorem ut tortor consequat accumsan.</p>
-            </div>
-
-            <div class="card">
-                
-                <h2>Company's name</h2>
-                <h3>"Company's motto"</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at rhoncus leo. Proin tincidunt dui turpis, lacinia tincidunt dui sagittis at. Sed porttitor a eros sed rutrum. In vel posuere metus. In hac habitasse platea dictumst. Nunc scelerisque augue nec orci consectetur rutrum. Etiam porttitor elementum nisl ac pellentesque. Sed eleifend facilisis auctor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed et velit tortor. Aenean in lorem ut tortor consequat accumsan.</p>
-            </div>
-
+            </section>
         </section>
 
     </main>
@@ -164,8 +164,10 @@
         </div>
     </footer>
 
+    <script src="scripts/news.js"></script>
+    
+    <script src="scripts/windchill.js"></script>
 
     <script src="scripts/getdates.js"></script>
-    <script src="scripts/windchill.js"></script>
 </body>
 </html>
