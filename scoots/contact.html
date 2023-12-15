@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Angel Orozco" >
+    <meta
+        name="description"
+        content="WDD 230 - Web Frontend Development, chamber of commerce, course assignment, made by: Angel David Orozoco Narvaez" >
+    <meta property="og:url"                content="https://angeldavidorozco.github.io/wdd230/chamber/" >
+    <meta property="og:type"               content="website">
+    <meta property="og:title"              content="Cordoba's chamber of commerce" >
+    <meta property="og:image"              content="https://estaticos-cdn.prensaiberica.es/clip/1670bbbb-9844-49a0-80ab-8cf70d1b4c2d_16-9-discover-aspect-ratio_default_0.jpg" >
+
+    <title>Cordoba's chamber of commerce discover page"</title>
+
+    <link rel="stylesheet" href="styles/normalize.css">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <link rel="icon" href="favicon.ico">
+    
+</head>
+
+<body>
+
+    <header>
+        <section class="header">
+            
+            <img src="styles/images/logo.webp" alt="Logo" width="100" height="100">
+            <h1>Scoots</h1>
+            
+            <button id="menu"></button>
+
+
+            <nav class="nav-header">
+                <a href="index.html" >Home</a>
+                <a href="rentals.html" >Rentals</a>
+                <a href="reservation.html" >Reservations</a>
+                <a href="contact.html" target="_blank" class="active">Contact Us!</a>
+                
+            </nav>
+
+        </section>
+
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="rentals.html" >Rentals</a>
+            <a href="reservation.html">Reservations</a>
+            <a href="contact.html" target="_blank" class="active">Contact Us!</a>
+        </nav>
+    </header>
+  
+
+        <main >
+
+            <form method="get" action="thankyou.html">
+                <fieldset>
+                    <legend>Any Questions?</legend>
+                    <label class="top">Your Name* <input type="text" id="fname" name="fname" required></label>
+                    <label class="top">Where are you from?* <input type="text" id="location" name="location" required></label>
+                    <label class="top">Email <input type="email" id="email" name="email" placeholder="someone@email.com" pattern="[^\s@]+@[^\s@]+\.[^\s@]+"></label>
+                    <label for="descrip" class="textbox">What would you like to know?:</label>
+                    <textarea name="textbox" id="descrip" rows="4" cols="35"></textarea>
+    
+                    <input class="submitBtn" type="submit" value="Contact Us!">
+                </fieldset>
+        
+                
+        
+            </form>
+    
+            <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d23654.266336298948!2d-86.94624978877441!3d20.498185779477705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1702662459591!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+        </main>
+
+   
+
+    <footer>
+        <div class="footer-top">
+            <img src="styles/images/logo.webp" alt="Logo" width="1" height="1">
+            <div class="ftitle">
+                <h4>Scoots</h4>
+                <p>island of Cozumel off the coast of Mexico</p>
+            </div>
+        </div>
+        
+        <div class="fbottom">
+            <hr>
+            <p id="copyright"></p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+
+
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/localstorage.js"></script>
+    <script src="scripts/blueapi.js"></script>
+</body>
+</html>

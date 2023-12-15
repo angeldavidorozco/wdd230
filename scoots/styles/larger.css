@@ -1,0 +1,97 @@
+@media (min-width : 1000px)
+{
+  .s, .m{
+    display: none;
+  }
+}
+
+@media (max-width : 800px)
+{
+  .carousel-caption{
+   
+    width: 80%;
+    font-size: 0.8rem;
+    
+  }
+
+  .hero .call{
+
+     
+      width: 50%;
+      
+  } 
+}
+
+
+
+@media (min-width: 900px)
+{
+  .photos{
+    grid-row: 1/4;
+    grid-column: 2/3;
+    background-color: var(--silver-lake-blue);
+    border: 1px solid #000;
+    width: 80%;
+    padding: 20px;
+    margin-left:20%;
+  }
+  
+  .photos img{
+    width: 90%;
+    
+    height: fit-content;
+    display: block;
+    margin: 20px auto;
+    
+    flex-direction: column;
+  }
+  
+  #discover{
+    margin: 3% auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 0.5fr 1fr;
+    align-items: center;
+    justify-items: center;
+    
+    max-width: 80%;
+    
+  }
+  
+  .dcard h2{
+    margin: 10px;
+    height: fit-content;
+    
+  }
+  
+  .dcard{
+    grid-column: 1/2;
+    height: auto;
+    width: 100%;
+    
+  
+  }
+  
+  .lastVisit p{
+    text-align: center;
+  }
+  
+  .currency{
+    background-color: #ccc;
+    width: fit-content;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 0 auto;
+  }
+
+  .main-grid{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .weather{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

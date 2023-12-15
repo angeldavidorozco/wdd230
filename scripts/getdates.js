@@ -134,8 +134,10 @@ function displayResults(data){
     const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`
     let desc = data.weather[0].description;
 	currentTemp.innerHTML = `${Math.round(data.main.temp)}&deg;F - ${desc}`;
+
     weatherIcon.setAttribute('alt', desc );
     weatherIcon.setAttribute('src', iconsrc );
 	
+    calcWC();
 }
 

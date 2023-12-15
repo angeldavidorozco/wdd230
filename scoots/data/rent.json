@@ -1,0 +1,106 @@
+{
+    "products": [
+      {
+        "name": "Honda Metro Scooter",
+        "url": "styles/images/metro",
+        "maxPersons": 1,
+        "rentalOptions": {
+          "halfDay": {
+            "duration": "3 hours",
+            "cost": "25$",
+            "reserve": "20$"
+          },
+          "fullDay": {
+            "duration": "whole day",
+            "cost": "35$",
+            "reserve": "30$"
+          }
+        }
+      },
+      {
+        "name": "Honda Dio Scooter",
+        "url": "styles/images/dio",
+        "maxPersons": 2,
+        "rentalOptions": {
+          "halfDay": {
+            "duration": "3 hours",
+            "cost": "35$",
+            "reserve": "30$"
+          },
+          "fullDay": {
+            "duration": "whole day",
+            "cost": "45$",
+            "reserve": "40$"
+          }
+        }
+      },
+      {
+        "name": "Honda PCX150 Scooter",
+        "url": "styles/images/pcx",
+        "maxPersons": 2,
+        "rentalOptions": {
+          "halfDay": {
+            "duration": "3 hours",
+            "cost": "45$",
+            "reserve": "40$"
+          },
+          "fullDay": {
+            "duration": "whole day",
+            "cost": "55$",
+            "reserve": "50$"
+          }
+        }
+      },
+      {
+        "name": "Honda Pioneer ATV",
+        "url": "styles/images/pioneer",
+        "maxPersons": 4,
+        "rentalOptions": {
+          "halfDay": {
+            "duration": "3 hours",
+            "cost": "60$",
+            "reserve": "50$"
+          },
+          "fullDay": {
+            "duration": "whole day",
+            "cost": "80$",
+            "reserve": "70$"
+          }
+        }
+      },
+      {
+        "name": "Jeep Wrangler - 4 door with a/c",
+        "url": "styles/images/wrangler4p",
+        "maxPersons": 5,
+        "rentalOptions": {
+          "halfDay": {
+            "duration": "3 hours",
+            "cost": "85$",
+            "reserve": "70$"
+          },
+          "fullDay": {
+            "duration": "whole day",
+            "cost": "125$",
+            "reserve": "100$"
+          }
+        }
+      },
+      {
+        "name": "Jeep Wrangler - 2 door",
+        "url": "styles/images/wrangler",
+        "maxPersons": 4,
+        "rentalOptions": {
+          "halfDay": {
+            "duration": "3 hours",
+            "cost": "70$",
+            "reserve": "60$"
+          },
+          "fullDay": {
+            "duration": "whole day",
+            "cost": "90$",
+            "reserve": "85$"
+          }
+        }
+      }
+    ]
+  }

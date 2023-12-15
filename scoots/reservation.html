@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Angel Orozco" >
+    <meta
+        name="description"
+        content="WDD 230 - Web Frontend Development, chamber of commerce, Join Page" >
+    <meta property="og:url"                content="https://angeldavidorozco.github.io/wdd230/chamber/" >
+    <meta property="og:type"               content="website">
+    <meta property="og:title"              content="Cordoba's chamber of commerce Join Page" >
+    <meta property="og:image"              content="https://estaticos-cdn.prensaiberica.es/clip/1670bbbb-9844-49a0-80ab-8cf70d1b4c2d_16-9-discover-aspect-ratio_default_0.jpg" >
+
+    <title>Cordoba's chamber of commerce Join Page</title>
+
+    <link rel="stylesheet" href="styles/normalize.css">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <link rel="icon" href="favicon.ico">
+    
+</head>
+
+<body>
+
+    <header>
+        <section class="header">
+            
+            <img src="styles/images/logo.webp" alt="Logo" width="100" height="100">
+            <h1>Scoots</h1>
+            
+            <button id="menu"></button>
+
+
+            <nav class="nav-header">
+                <a href="index.html" >Home</a>
+                <a href="rentals.html" >Rentals</a>
+                <a href="reservation.html" class="active">Reservations</a>
+                <a href="contact.html" target="_blank">Contact Us!</a>
+                
+            </nav>
+
+        </section>
+
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="rentals.html" >Rentals</a>
+            <a href="reservation.html" class="active">Reservations</a>
+            <a href="contact.html" target="_blank">Contact Us!</a>
+        </nav>
+    </header>
+
+    <main id="join">
+        <div class="card">
+            <h2>Rental Services and Agreements</h2>
+            <ul>
+                <li>A $50 security deposit is required to confirm reservations.</li>
+                <li>A valid drivers license is required in hand at the time of rental.</li>
+                <li>No one under the age of 12 years of age are allowed to ride on the scooters.</li>
+                <li>Fuel charge is not included.</li>
+                <li>Unlimited mileage.</li>
+                <li>Liability insurance is included.</li>
+                <li>Damage insurance is available for purchase.</li>
+                <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+                <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</li>
+                <li>Rentals may be returned to either physical location.</li>
+            </ul>
+        </div>
+
+        <form method="get" action="thankyou.html" onsubmit="return validateForm()">
+            <fieldset>
+                <legend>User Information</legend>
+                <label class="top">First name* <input type="text" id="fname" name="fname" required></label>
+                <label class="top">Last name* <input type="text" id="lname" name="lname" required></label>
+                <label class="top">Country* <input type="text" id="country" name="country" required></label>
+                <label class="top">Email* <input type="email" id="email" name="email" placeholder="someone@byui.edu" pattern="[^\s@]+@[^\s@]+\.[^\s@]+" required></label>
+                <label class="top">Phone number* <input type="tel" id="pnumber" name="pnumber" placeholder="##########" required></label>
+
+                <label class = "top radio"> Hourly Rental<input type="radio" id="hours" name="rental" value="hours" required></label>
+                <label class = "top radio">Daily Rental<input type="radio" id="days" name="rental" value="days" > </label>
+                <label class="top">Amount <input type="number" id="amount" name="amount" pattern="^[a-zA-Z\- ]{7,}$" title="Enter amount" required></label>
+                
+                <label><input type="hidden" name="timestamp" id="timestamp"></label>
+                
+            </fieldset>
+    
+            <fieldset>
+
+                <legend>Choose your Vehicle</legend>
+                
+                <label class = "sbs"><input type="radio" id="MS" name="vehicle" value="MS" required> Metro Scooter</label>
+                <label class = "sbs"><input type="radio" id="DS" name="vehicle" value="DS" > Dio Scooter </label>
+                <label class = "sbs"><input type="radio" id="PCX" name="vehicle" value="PCX" > Honda PCX150 Scooter </label>
+                <label class = "sbs"><input type="radio" id="ATV" name="vehicle" value="ATV" > Honda Pioneer </label>
+                <label class = "sbs"><input type="radio" id="JW4" name="vehicle" value="JW4" > Jeep 4 Doors </label>
+                <label class = "sbs"><input type="radio" id="JW2" name="vehicle" value="JW2" > Jeep 2 Doors </label>
+
+                        
+
+            </fieldset>
+
+            
+            <fieldset>
+                <legend>Delivery Information</legend>
+                <label for="descrip" class="textbox">Enter your address:</label>
+                <textarea name="textbox" id="descrip" rows="4" cols="35"></textarea>
+            </fieldset>
+    
+            <input class="submitBtn" type="submit" value="Send the information">
+    
+        </form>
+
+    </main>
+
+    <footer>
+        <div class="footer-top">
+            <img src="styles/images/logo.webp" alt="Logo" width="1" height="1">
+            <div class="ftitle">
+                <h4>Scoots</h4>
+                <p>island of Cozumel off the coast of Mexico</p>
+            </div>
+        </div>
+        
+        <div class="fbottom">
+        <hr>
+        <p id="copyright"></p>
+        <p id="lastModified"></p>
+        </div>
+    </footer>
+
+
+    <script src="scripts/form.js"></script>
+</body>
+</html>
